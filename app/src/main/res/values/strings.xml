@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Projeto FireBase</string>
+    <string name="entrar">Entrar</string>
+    <string name="nome_hint">Nome</string>
+    <string name="mail_hint">Email</string>
+    <string name="pass_hint">Senha</string>
+    <string name="text_tela_cadastro">Crie uma conta clicando aqui</string>
+    <string name="text_btn_cadastro">Cadastrar</string>
+    <string name="title_tela_cadastro">Cadastre-se</string>
+    <string name="imageDescription_coffeeShop_loginScreen">Imagem Cafeteria</string>
+    <string name="logOut_button">Log Out</string>
+    <string name="email_profileScreen">gilberto@gmail.com</string>
+    <string name="nome_profileScreen">Gilberto</string>
+    <string name="imageDescription_mailIcon_profileScreen">Mail Icon</string>
+    <string name="imageDescription_personIcon_profileScreen">Person Icon</string>
+</resources>

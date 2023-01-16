@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerScreen"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".FormCadastro">
+    tools:context=".RegisterScreen"
+    android:focusable="true">
 
     <TextView
         android:id="@+id/title_tela_cadastro"
@@ -24,9 +28,10 @@
         app:layout_constraintTop_toBottomOf="@id/title_tela_cadastro" />
 
     <EditText
-        android:id="@+id/cadastro_nome"
+        android:id="@+id/cadastroForm_nome"
         style="@style/textInput"
         android:autofillHints="name"
+        android:drawableEnd="@drawable/ic_person"
         android:hint="@string/nome_hint"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="@id/cadastro_component"
@@ -34,7 +39,7 @@
         app:layout_constraintTop_toTopOf="@id/cadastro_component" />
 
     <EditText
-        android:id="@+id/cadastro_mail"
+        android:id="@+id/cadastroForm_email"
         style="@style/textInput"
         android:autofillHints="emailAddress"
         android:drawableEnd="@drawable/ic_email"
@@ -42,10 +47,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@id/cadastro_component"
         app:layout_constraintStart_toStartOf="@id/cadastro_component"
-        app:layout_constraintTop_toBottomOf="@id/cadastro_nome" />
+        app:layout_constraintTop_toBottomOf="@id/cadastroForm_nome" />
 
     <EditText
-        android:id="@+id/cadastro_pass"
+        android:id="@+id/cadastroForm_pass"
         style="@style/textInput"
         android:autofillHints="password"
         android:drawableEnd="@drawable/ic_eye"
@@ -53,14 +58,14 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@id/cadastro_component"
         app:layout_constraintStart_toStartOf="@id/cadastro_component"
-        app:layout_constraintTop_toBottomOf="@id/cadastro_mail" />
+        app:layout_constraintTop_toBottomOf="@id/cadastroForm_email" />
 
     <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/btn_cadastrar"
-    style="@style/loginButton"
-    android:text="@string/text_btn_cadastro"
-    app:layout_constraintEnd_toEndOf="@id/cadastro_component"
-    app:layout_constraintStart_toStartOf="@id/cadastro_component"
-    app:layout_constraintTop_toBottomOf="@id/cadastro_component" />
+        android:id="@+id/btn_cadastrar"
+        style="@style/loginButton"
+        android:text="@string/text_btn_cadastro"
+        app:layout_constraintEnd_toEndOf="@id/cadastro_component"
+        app:layout_constraintStart_toStartOf="@id/cadastro_component"
+        app:layout_constraintTop_toBottomOf="@id/cadastro_component" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".TelaPrincipal">
+    tools:context=".ProfileScreen">
 
     <View
         android:id="@+id/user_pic_container"
@@ -37,13 +37,12 @@
     <TextView
         android:id="@+id/text_user_name"
         style="@style/text_field_profile"
-        android:text="@string/nome_profileScreen"
         android:layout_marginTop="97dp"
         app:layout_constraintStart_toEndOf="@+id/icone_user_name"
         app:layout_constraintTop_toBottomOf="@+id/user_pic_container" />
 
     <ImageView
-        android:id="@+id/icone_user_mail"
+        android:id="@+id/icone_user_email"
         style="@style/icone_profile"
         android:contentDescription="@string/imageDescription_mailIcon_profileScreen"
         android:src="@drawable/ic_email"
@@ -52,18 +51,18 @@
         app:layout_constraintTop_toBottomOf="@+id/icone_user_name" />
 
     <TextView
-        android:id="@+id/text_user_mail"
+        android:id="@+id/text_user_email"
         style="@style/text_field_profile"
-        android:text="@string/email_profileScreen"
         android:layout_marginTop="45dp"
-        app:layout_constraintStart_toEndOf="@+id/icone_user_mail"
+        app:layout_constraintStart_toEndOf="@+id/icone_user_email"
         app:layout_constraintTop_toBottomOf="@+id/icone_user_name" />
-    
+
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logOut"
         style="@style/logout_btn"
         android:text="@string/logOut_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_user_mail" />
+        app:layout_constraintTop_toBottomOf="@+id/text_user_email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

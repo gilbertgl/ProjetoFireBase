@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:fillViewport="true">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/loginScreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         tools:context=".FormLogin">
 
         <ImageView
@@ -34,7 +36,7 @@
             app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <EditText
-            android:id="@+id/edit_mail"
+            android:id="@+id/loginForm_email"
             style="@style/textInput"
             android:autofillHints="emailAddress"
             android:drawableEnd="@drawable/ic_email"
@@ -45,7 +47,7 @@
             app:layout_constraintTop_toTopOf="@id/loginComponent" />
 
         <EditText
-            android:id="@+id/edit_pass"
+            android:id="@+id/loginForm_pass"
             style="@style/textInput"
             android:autofillHints="password"
             android:drawableEnd="@drawable/ic_eye"
@@ -53,26 +55,28 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="@id/loginComponent"
             app:layout_constraintStart_toStartOf="@id/loginComponent"
-            app:layout_constraintTop_toBottomOf="@id/edit_mail" />
+            app:layout_constraintTop_toBottomOf="@id/loginForm_email" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_entrar"
+            android:id="@+id/btn_logIn"
             style="@style/loginButton"
             android:text="@string/entrar"
             app:layout_constraintEnd_toEndOf="@id/loginComponent"
             app:layout_constraintStart_toStartOf="@id/loginComponent"
-            app:layout_constraintTop_toBottomOf="@id/edit_pass" />
+            app:layout_constraintTop_toBottomOf="@id/loginForm_pass" />
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="@style/progressBar"
+            android:layout_marginTop="16dp"
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/loginComponent" />
 
         <TextView
-            android:id="@+id/tela_cadastro"
+            android:id="@+id/btn_registrationScreen"
             style="@style/tela_cadastro"
             android:text="@string/text_tela_cadastro"
             app:layout_constraintEnd_toEndOf="parent"

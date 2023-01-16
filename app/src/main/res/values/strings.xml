@@ -9,8 +9,8 @@
     <string name="title_tela_cadastro">Cadastre-se</string>
     <string name="imageDescription_coffeeShop_loginScreen">Imagem Cafeteria</string>
     <string name="logOut_button">Log Out</string>
-    <string name="email_profileScreen">gilberto@gmail.com</string>
-    <string name="nome_profileScreen">Gilberto</string>
     <string name="imageDescription_mailIcon_profileScreen">Mail Icon</string>
     <string name="imageDescription_personIcon_profileScreen">Person Icon</string>
+    <string name="text_loggingOut_screen">Logging Out</string>
+    <string name="text_loggingout_screen">text_loggingOut_screen</string>
 </resources>
